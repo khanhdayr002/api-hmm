@@ -1,0 +1,73 @@
+<?php
+$url = array(
+"https://imgur.com/undefined.jpg",
+   "https://imgur.com/8XjOV53.jpg",
+    "https://imgur.com/c2jE0PM.jpg",
+    "https://imgur.com/tjK9Vvy.jpg",
+    "https://imgur.com/q0nk1Oz.jpg",
+    "https://imgur.com/POmXafB.jpg",
+    "https://imgur.com/MDwrnyX.jpg",
+    "https://imgur.com/4pUycy3.jpg",
+    "https://imgur.com/zF0oWJD.jpg",
+    "https://imgur.com/DTm7hhc.jpg",
+    "https://imgur.com/wJvMJk9.jpg",
+    "https://imgur.com/B1m52LU.jpg",
+    "https://imgur.com/BfQpRhH.jpg",
+    "https://imgur.com/eUMpnD1.jpg",
+    "https://imgur.com/lWMSvNK.jpg",
+    "https://imgur.com/iVOlVcz.jpg",
+    "https://imgur.com/VPLKSnt.jpg",
+    "https://imgur.com/FdO5LdI.jpg",
+    "https://imgur.com/dUTgB6l.jpg",
+    "https://imgur.com/S5sqozc.jpg",
+    "https://imgur.com/mMDAc2B.jpg",
+    "https://imgur.com/kBHeMC1.jpg",
+    "https://imgur.com/nWXu7df.jpg",
+    "https://imgur.com/2Dkg7wW.jpg",
+    "https://imgur.com/vwp9onl.jpg",
+    "https://imgur.com/UKs7Keh.jpg",
+    "https://imgur.com/sjpKUSs.jpg",
+    "https://imgur.com/DV0yN8A.jpg",
+    "https://imgur.com/wvRP10l.jpg",
+    "https://imgur.com/xlAv06I.jpg", 
+    "https://imgur.com/cjHFWNA.jpg",
+    "https://imgur.com/U4hzKUe.jpg",
+    "https://imgur.com/FuK0PIA.jpg",
+    "https://imgur.com/tAhezf3.jpg",
+    "https://imgur.com/zS51Ccf.jpg",
+    "https://imgur.com/HJyhTQY.jpg",
+    "https://imgur.com/MQrv3mV.jpg",
+    "https://imgur.com/g9Uu6cH.jpg",
+    "https://imgur.com/DZhdD2c.jpg",
+    "https://imgur.com/XdfK4UQ.jpg",
+    "https://imgur.com/9OiKa3S.jpg",
+    "https://imgur.com/TyMmlUR.jpg",
+    "https://imgur.com/OS8DTbG.jpg",
+    "https://imgur.com/if3LpFH.jpg",
+    "https://imgur.com/IYkDUQ9.jpg",
+    "https://imgur.com/nyDR1sZ.jpg",
+    "https://imgur.com/nTnMWB1.jpg",
+    "https://imgur.com/T32Ahjr.jpg",
+    "https://imgur.com/vETupbo.jpg",
+    "https://imgur.com/q2ZI1Hx.jpg",
+    "https://imgur.com/8qs8bjq.jpg",
+    "https://imgur.com/DlJkh4z.jpg",
+    "https://imgur.com/nYsnE0L.jpg",
+    "https://imgur.com/1pk4RhD.jpg",
+    "https://imgur.com/NoAEZ7m.jpg",
+    "https://imgur.com/lRqyU1Z.jpg",
+    "https://imgur.com/cK0LDEY.jpg",
+);
+$kaneki = array_rand($url);
+$kanekivip = $url [$kaneki];
+$anime = array(
+"data" => $kanekivip,
+"author" => "Đức Ryo",
+"success" => "true",
+);
+$rdimg = json_encode($anime);
+
+$i = ['\/v\/','\/','L\u00ea C\u00f4ng Quy\u1ec1n'];
+$t = ['/v/','/','Đức Ryo'];
+$j = str_replace($i, $t, $rdimg);
+echo $j;
